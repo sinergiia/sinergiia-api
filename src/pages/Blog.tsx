@@ -10,6 +10,8 @@ export default function Blog() {
       <p className="text-xl text-gray-600 text-center mb-16">
         Descubre las últimas tendencias y mejores prácticas en automatización e IA para PYMEs
       </p>
+
+      <p>THIS IS A TEST DRIVE</p>
       
       <div className="grid md:grid-cols-3 gap-8">
         {blogPosts.map((post) => (
