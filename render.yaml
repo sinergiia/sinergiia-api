@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: sinergiia-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_TOKEN
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ADMIN_TOKEN
+        sync: false
+      - key: PORT
+        value: "3000"
+      - key: DATABASE_URL
+        sync: false
+    healthCheckPath: /
+    autoDeploy: true
